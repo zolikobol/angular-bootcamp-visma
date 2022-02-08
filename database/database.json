@@ -1,0 +1,18 @@
+{
+  "products": [
+    {
+      "id": 0,
+      "name": "product 1",
+      "description": "description",
+      "price": 123
+    }
+  ],
+  "catalog": [
+    {
+      "id": 0,
+      "name": "catalog 1",
+      "description": "description 1",
+      "productId": 0
+    }
+  ]
+}
