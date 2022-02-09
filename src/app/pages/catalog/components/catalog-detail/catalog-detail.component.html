@@ -1,1 +1,10 @@
-<p>catalog-detail works!</p>
+<div>
+  <div>
+    <button type="button" class="btn btn-link" (click)="goBack()">Back</button>
+  </div>
+  <div>
+    <div *ngFor="let product of products | async">
+      {{ product.name }}
+    </div>
+  </div>
+</div>

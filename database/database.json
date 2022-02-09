@@ -2,17 +2,62 @@
   "products": [
     {
       "id": 0,
+      "name": "product 0",
+      "description": "description",
+      "price": 123,
+      "catalogId": 0
+    },
+    {
+      "id": 1,
       "name": "product 1",
       "description": "description",
-      "price": 123
+      "price": 123,
+      "catalogId": 0
+    },
+    {
+      "id": 2,
+      "name": "product 2",
+      "description": "description",
+      "price": 123,
+      "catalogId": 0
+    },
+    {
+      "id": 3,
+      "name": "product 3",
+      "description": "description",
+      "price": 123,
+      "catalogId": 2
     }
   ],
   "catalog": [
     {
       "id": 0,
+      "name": "catalog 0",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed augue lacus, ornare id pharetra fringilla, aliquet eu ex. Nam eleifend tortor nec lacinia sollicitudin. Vestibulum lacinia aliquet lectus ac fermentum. Nullam vel ullamcorper metus. Nulla dapibus nunc et ipsum mattis, quis rhoncus dui lacinia. Pellentesque vitae ultrices magna, quis dapibus massa. Sed est velit, maximus vitae turpis non, placerat pharetra elit. Nam porttitor arcu nisl, a tincidunt metus consequat id. Praesent vulputate mollis lorem, ut rhoncus dolor. Pellentesque molestie, odio eu pharetra lobortis, lorem quam luctus libero, vel sollicitudin tortor quam sed augue. Donec laoreet nulla eget leo lacinia, in laoreet nisl eleifend. Integer nisi urna, rutrum vel arcu ac, egestas vestibulum eros. Curabitur sed ligula eget enim ornare sagittis. Duis consequat tellus nec lectus ornare cursus. Maecenas gravida venenatis nunc laoreet sagittis. Pellentesque euismod eros non dolor ultricies consectetur. Aliquam tincidunt ante nec sem aliquam dictum vel vel justo. Ut in consectetur sem. In lobortis mauris vel ante ornare posuere. Nulla consequat vitae nunc at volutpat. Donec ut imperdiet arcu. Integer vitae mollis tortor. Donec aliquet, est non efficitur vulputate, metus dui elementum elit, ut vulputate nisl lacus vitae justo. Duis quis felis imperdiet, elementum sapien eget, bibendum mauris. Integer mattis dui varius mauris semper molestie. Duis rhoncus tempor interdum. Morbi eu leo tempor, lobortis ipsum eu, varius ante. Nunc at commodo nisl. Aenean id quam quis orci maximus vulputate. Pellentesque sed libero posuere, tincidunt urna vitae, euismod leo. Sed sed quam quis nibh cursus commodo sit amet eu nisl. Cras vel accumsan mi. Vestibulum sit amet ornare nulla. Nam euismod malesuada tellus, at luctus erat porttitor vel. Fusce vehicula magna tortor, sit amet congue leo tempor sit amet. Phasellus a lectus hendrerit, tempus nunc in, porttitor massa. Ut dictum metus eget tellus sollicitudin viverra. Aenean vitae aliquam dui, eget venenatis erat.",
+      "catalogImage": "https://media.istockphoto.com/photos/close-up-of-dummy-on-white-background-picture-id465087804"
+    },
+    {
+      "id": 1,
       "name": "catalog 1",
       "description": "description 1",
-      "productId": 0
+      "catalogImage": "https://media.istockphoto.com/photos/close-up-of-dummy-on-white-background-picture-id465087804"
+    },
+    {
+      "id": 2,
+      "name": "catalog 2",
+      "description": "description 2",
+      "catalogImage": "https://media.istockphoto.com/photos/close-up-of-dummy-on-white-background-picture-id465087804"
+    },
+    {
+      "id": 3,
+      "name": "catalog 3",
+      "description": "description 3"
+    },
+    {
+      "id": 4,
+      "name": "catalog 4",
+      "description": "description 4",
+      "catalogImage": "https://media.istockphoto.com/photos/close-up-of-dummy-on-white-background-picture-id465087804"
     }
   ]
 }

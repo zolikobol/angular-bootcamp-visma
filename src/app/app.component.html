@@ -1,4 +1,12 @@
 <app-header></app-header>
 <app-navigation></app-navigation>
-<router-outlet></router-outlet>
+<div class="d-flex content">
+  <div class="main-content col-10">
+    <router-outlet></router-outlet>
+  </div>
+  <app-right-side-widget
+    class="right-side-widget col-2"
+  ></app-right-side-widget>
+</div>
+
 <app-footer></app-footer>

@@ -9,7 +9,7 @@ const routes: Routes = [
     redirectTo: "list",
   },
   {
-    path: "detail",
+    path: "detail/:id",
     component: CatalogDetailComponent,
   },
   {

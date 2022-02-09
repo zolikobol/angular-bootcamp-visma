@@ -1,5 +1,6 @@
 import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
+import { CartComponent } from "./pages/components/cart/cart.component";
 import { HomeComponent } from "./pages/components/home/home.component";
 import { NotFoundComponent } from "./pages/components/not-found/not-found.component";
 
@@ -13,12 +14,15 @@ const routes: Routes = [
     loadChildren: () =>
       import("./pages/catalog/catalog.module").then((m) => m.CatalogModule),
   },
-  // {
-  //   path: "cart",
-  // },
-  // {
-  //   path: "orders",
-  // },
+  {
+    path: "cart",
+    component: CartComponent,
+  },
+  {
+    path: "order",
+    loadChildren: () =>
+      import("./pages/order/order.module").then((m) => m.OrderModule),
+  },
   {
     path: "**",
     component: NotFoundComponent,
