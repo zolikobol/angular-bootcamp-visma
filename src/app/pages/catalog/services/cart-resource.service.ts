@@ -12,10 +12,8 @@ export class CartResourceService {
 
   constructor(private httpClient: HttpClient) {}
 
-  addProductToCart(product: ProductModel): Observable<CartModel> {
-    return this.httpClient.patch<CartModel>(`${this.URL}/cart`, {
-      product,
-    });
+  addProductToCart(cart: CartModel): Observable<CartModel> {
+    return this.httpClient.post<CartModel>(`${this.URL}/cart`, cart);
   }
 
   getCart(userSessionId: string | null): Observable<CartModel[]> {

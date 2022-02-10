@@ -53,6 +53,10 @@ export class ProductComponent implements OnInit {
 
   onProductAddedToCart(): void {
     this.cart.products.push(this.product);
-    console.log(this.cart);
+    this.cartResourceService
+      .addProductToCart(this.cart)
+      .subscribe((cart: CartModel) => {
+        console.log(cart);
+      });
   }
 }

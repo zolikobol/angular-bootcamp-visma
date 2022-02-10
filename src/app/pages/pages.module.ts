@@ -4,7 +4,8 @@ import { HomeComponent } from "./components/home/home.component";
 import { NotFoundComponent } from "./components/not-found/not-found.component";
 import { CartComponent } from "./components/cart/cart.component";
 import { ProductComponent } from "./components/product/product.component";
-import { FormsModule } from "@angular/forms";
+import { ReactiveFormsModule } from "@angular/forms";
+import { SharedModule } from "../shared/shared.module";
 
 @NgModule({
   declarations: [
@@ -13,7 +14,7 @@ import { FormsModule } from "@angular/forms";
     CartComponent,
     ProductComponent,
   ],
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, SharedModule, ReactiveFormsModule],
   exports: [HomeComponent, NotFoundComponent, CartComponent, ProductComponent],
 })
 export class PagesModule {}
