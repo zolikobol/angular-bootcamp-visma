@@ -1,10 +1,17 @@
-<div class="catalog-list">
-  <app-catalog-list-view
-    *ngFor="let item of catalogs | async"
-    [id]="item.id"
-    [name]="item.name"
-    [description]="item.description"
-    [catalogImage]="item.catalogImage"
-    (onCatalogListViewClick)="onCatalogListViewClick(item.id)"
-  ></app-catalog-list-view>
-</div>
+<app-page-wrapper>
+  <div class="catalog-list list-group">
+    <button
+      type="button"
+      class="list-group-item list-group-item-action"
+      *ngFor="let item of catalogs | async"
+    >
+      <app-catalog-list-view
+        [id]="item.id"
+        [name]="item.name"
+        [description]="item.description"
+        [image]="item.catalogImage"
+        (onListViewClick)="onCatalogListViewClick(item.id)"
+      ></app-catalog-list-view>
+    </button>
+  </div>
+</app-page-wrapper>

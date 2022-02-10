@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { ActivatedRoute } from "@angular/router";
+import { ActivatedRoute, Router } from "@angular/router";
 import { ProductResourceService } from "../../services/product-resource.service";
 import { switchMap } from "rxjs/operators";
 import { ProductModel } from "../../models/product.model";
@@ -16,7 +16,8 @@ export class CatalogDetailComponent implements OnInit {
 
   constructor(
     private activatedRoute: ActivatedRoute,
-    private productResourceService: ProductResourceService
+    private productResourceService: ProductResourceService,
+    private router: Router
   ) {}
 
   ngOnInit() {
@@ -29,5 +30,9 @@ export class CatalogDetailComponent implements OnInit {
 
   goBack(): void {
     window.history.back();
+  }
+
+  onProductClick(id: number): void {
+    this.router.navigate(["product", id]);
   }
 }

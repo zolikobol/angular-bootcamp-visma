@@ -1,5 +1,5 @@
-<div class="catalog-list-view d-flex" (click)="onCatalogClick()">
-  <img [src]="catalogImage" />
+<div class="catalog-list-view d-flex" (click)="onItemClick()">
+  <img [src]="image" />
   <div class="m-3">
     <h2>{{ name }}</h2>
     <p>{{ description | shortDescription: 200 }}</p>

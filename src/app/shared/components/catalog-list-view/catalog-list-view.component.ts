@@ -9,14 +9,14 @@ export class CatalogListViewComponent implements OnInit {
   @Input() id: number;
   @Input() name: string;
   @Input() description: string;
-  @Input() catalogImage: string;
-  @Output() onCatalogListViewClick = new EventEmitter();
+  @Input() image: string;
+  @Output() onListViewClick = new EventEmitter();
 
   constructor() {}
 
   ngOnInit() {}
 
-  onCatalogClick(): void {
-    this.onCatalogListViewClick.emit(this.id);
+  onItemClick(): void {
+    this.onListViewClick.emit(this.id);
   }
 }
