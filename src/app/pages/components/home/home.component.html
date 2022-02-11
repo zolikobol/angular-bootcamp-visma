@@ -2,13 +2,7 @@
   <div>
     <form [formGroup]="form">
       <div>
-        <div>
-          <label>Name</label>
-          <input type="text" formControlName="name" />
-          <div *ngIf="form.get('name').invalid">
-            <span>name has error</span>
-          </div>
-        </div>
+        <app-text-input label="Name" formControlName="name"></app-text-input>
       </div>
       <button type="button" class="btn btn-primary" (click)="onFormSubmit()">
         Send

@@ -24,6 +24,10 @@ export class NavigationService {
         name: NavigationItemsEnum.ORDER,
         link: "order",
       },
+      {
+        name: NavigationItemsEnum.DOGS,
+        link: "dogs",
+      },
     ];
   }
 }

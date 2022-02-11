@@ -4,8 +4,9 @@ import { HomeComponent } from "./components/home/home.component";
 import { NotFoundComponent } from "./components/not-found/not-found.component";
 import { CartComponent } from "./components/cart/cart.component";
 import { ProductComponent } from "./components/product/product.component";
-import { ReactiveFormsModule } from "@angular/forms";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { SharedModule } from "../shared/shared.module";
+import { DogsComponent } from './components/dogs/dogs.component';
 
 @NgModule({
   declarations: [
@@ -13,8 +14,9 @@ import { SharedModule } from "../shared/shared.module";
     NotFoundComponent,
     CartComponent,
     ProductComponent,
+    DogsComponent,
   ],
-  imports: [CommonModule, SharedModule, ReactiveFormsModule],
-  exports: [HomeComponent, NotFoundComponent, CartComponent, ProductComponent],
+  imports: [CommonModule, SharedModule, ReactiveFormsModule, FormsModule],
+  exports: [HomeComponent, NotFoundComponent, CartComponent, ProductComponent, DogsComponent],
 })
 export class PagesModule {}

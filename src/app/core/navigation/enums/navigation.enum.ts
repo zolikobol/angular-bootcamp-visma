@@ -3,4 +3,5 @@ export enum NavigationItemsEnum {
   CATALOG = "Catalog",
   CART = "Cart",
   ORDER = "Order",
+  DOGS = "Dogs",
 }

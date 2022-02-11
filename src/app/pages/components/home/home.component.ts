@@ -31,7 +31,9 @@ export class HomeComponent implements OnInit {
     age: new FormControl(18, [Validators.min(18), Validators.max(99)]),
   });
 
-  constructor() {}
+  constructor() {
+    // this.form.get("name").disable();
+  }
 
   ngOnInit() {}
 

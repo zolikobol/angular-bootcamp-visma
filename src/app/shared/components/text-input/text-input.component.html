@@ -1,0 +1,10 @@
+<div class="text-input-wrapper">
+  <label *ngIf="label" class="text-label">{{ label }}</label>
+  <input
+    type="text"
+    [(ngModel)]="value"
+    (ngModelChange)="onChange($event)"
+    [disabled]="isDisabled"
+  />
+  <span *ngIf="hasErrors">invalid</span>
+</div>

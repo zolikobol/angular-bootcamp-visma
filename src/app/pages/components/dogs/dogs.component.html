@@ -1,0 +1,11 @@
+<div>
+  <div class="container">
+    <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+      <div class="col" *ngFor="let dog of dogs">
+        <div class="p-3 border bg-light" class="dog-image">
+          <img [src]="dog" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
